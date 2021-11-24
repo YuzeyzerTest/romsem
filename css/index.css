@@ -109,6 +109,10 @@
   border-bottom: 1px solid #a4acad;
 }
 
+.header__logo {
+  display: none;
+}
+
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,6 +246,9 @@
             align-items: center;
     padding: 0 20px;
   }
+  .header__logo {
+    display: block;
+  }
   .header__city {
     display: none;
   }
@@ -325,6 +332,12 @@
   height: 10px;
 }
 
+@media screen and (max-width: 576px) {
+  .slider {
+    display: none;
+  }
+}
+
 .menu {
   padding-top: 30px;
 }
@@ -366,6 +379,12 @@
 .menu-item img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    padding-top: 0;
+  }
 }
 
 .products-filter {
@@ -494,6 +513,12 @@
   color: #f2f2f2;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .products {
+    display: none;
+  }
 }
 
 .about {
@@ -631,6 +656,12 @@
   bottom: -100%;
 }
 
+@media screen and (max-width: 576px) {
+  .about {
+    padding-bottom: 0;
+  }
+}
+
 .footer {
   padding: 30px 100px 0;
   max-width: 1170px;
@@ -759,6 +790,41 @@
   font-size: 18px;
   line-height: 1.5;
   color: #a4acad;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 0 20px 30px;
+  }
+  .footer__row {
+    border: none;
+  }
+  .footer-item {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-item.footer-nav {
+    display: none;
+  }
+  .footer-contacts {
+    border: none;
+    padding: 0;
+  }
+  .footer-numbers {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .footer-contacts__icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-contacts__title {
+    display: none;
+  }
+  .footer-contacts__title + input {
+    display: none;
+  }
 }
 
 .sidebar-cart {
@@ -1107,10 +1173,19 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-hr, body, ul, h1, h2, h3, h4, h5, h6, p {
+hr,
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -1143,6 +1218,12 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 576px) {
+  main {
+    padding: 0 20px;
+  }
+}
+
 .sidebar-cart {
   width: 430px;
 }
@@ -1151,12 +1232,24 @@ main {
   width: 50%;
 }
 
+@media screen and (max-width: 576px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
 .col-4 {
   width: 33.33%;
 }
 
 .col-3 {
   width: 25%;
+}
+
+@media screen and (max-width: 576px) {
+  .col-3 {
+    width: 50%;
+  }
 }
 
 .row {
