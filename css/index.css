@@ -1220,6 +1220,7 @@
 }
 
 .mobile-cart {
+  display: none;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -1276,6 +1277,12 @@
   font-size: 14px;
   line-height: 1.5;
   color: #000;
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-cart {
+    display: block;
+  }
 }
 
 body {
