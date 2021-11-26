@@ -49,6 +49,9 @@ a {
     width: 100%;
     background-color: $bg-light-gray;
   }
+  @include mobile {
+    overflow: hidden;
+  }
 }
 
 main {

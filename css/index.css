@@ -342,6 +342,10 @@
   padding-top: 30px;
 }
 
+.menu.mobile {
+  display: none;
+}
+
 .menu .row {
   margin: 0 -15px;
 }
@@ -383,7 +387,23 @@
 
 @media screen and (max-width: 576px) {
   .menu {
-    padding-top: 0;
+    padding-top: 15px;
+  }
+  .menu.mobile {
+    display: block;
+  }
+  .menu.mobile .menu-item__title {
+    bottom: auto;
+    top: 10px;
+  }
+  .menu .row {
+    margin: 0 -5px;
+  }
+  .menu-item {
+    margin: 5px;
+  }
+  .menu-item__title {
+    font-size: 18px;
   }
 }
 
@@ -1210,6 +1230,12 @@ a {
 .wrapper__content {
   width: 100%;
   background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    overflow: hidden;
+  }
 }
 
 main {
