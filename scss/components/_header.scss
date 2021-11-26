@@ -105,6 +105,7 @@
   @include mobile {
     flex-direction: row;
     border-right: none;
+    padding: 5px 15px;
     &__phone {
       font-size: 12px;
       white-space: nowrap;

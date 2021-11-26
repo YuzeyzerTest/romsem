@@ -267,6 +267,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     border-right: none;
+    padding: 5px 15px;
   }
   .contacts__phone {
     font-size: 12px;
@@ -1131,6 +1132,32 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+  .goods__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0 0;
+  }
+  .goods__title img {
+    width: 27px;
+    height: 29px;
+  }
+  .goods__title h3 {
+    font-size: 24px;
+  }
+  .goods-sort {
+    margin-top: 15px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 .oreder .header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1266,6 +1293,12 @@ main {
 
 .col-4 {
   width: 33.33%;
+}
+
+@media screen and (max-width: 576px) {
+  .col-4 {
+    width: 100%;
+  }
 }
 
 .col-3 {
