@@ -1219,6 +1219,65 @@
   margin-right: 20px;
 }
 
+.mobile-cart {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.mobile-cart nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-cart ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-cart li {
+  margin-right: 35px;
+}
+
+.mobile-cart li:last-child {
+  margin-right: 0;
+}
+
+.mobile-cart a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-cart img {
+  max-width: 100%;
+  height: 30px;
+}
+
+.mobile-cart span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
