@@ -19,29 +19,27 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" sizes="16x16" href="./img/logo.png">
+    <link rel="icon" sizes="16x16" href="./img/logo.png" />
   </head>
   <body>
-
-
     <div class="mobile-cart">
       <nav>
         <ul>
           <li>
             <a href="./index.html">
-              <img src="./img/mobile-menu.svg" alt="Меню">
+              <img src="./img/mobile-menu.svg" alt="Меню" />
               <span>Меню</span>
             </a>
           </li>
           <li>
-            <a href="./product-cart.html">
-              <img src="./img/mobile-cart.svg" alt="Корзина">
+            <a href="#">
+              <img src="./img/mobile-cart.svg" alt="Корзина" />
               <span>Корзина</span>
             </a>
           </li>
           <li>
             <a href="./reviews.html">
-              <img src="./img/mobile-reviews.svg" alt="Отзывы">
+              <img src="./img/mobile-reviews.svg" alt="Отзывы" />
               <span>Отзывы</span>
             </a>
           </li>
@@ -169,7 +167,127 @@
         </header>
 
         <main>
-          Отзывы
+          <div class="ways">
+            <a href="./sety.html" class="ways__back">
+              <span>
+                <img src="./img/arrow-white.svg" alt="Back" />
+              </span>
+              Назад
+            </a>
+            <a href="./cart.html" class="ways__next">
+              Вперед
+              <span>
+                <img src="./img/arrow-white.svg" alt="Back" />
+              </span>
+            </a>
+          </div>
+
+          <section class="product-cart">
+            <img
+              src="./img/product-cart.png"
+              alt="Филадельфия и
+            лосось сет"
+            />
+            <div class="product-cart__content">
+              <h1 class="product-cart__title">Филадельфия и лосось сет</h1>
+              <span class="product-cart__weight">290 грамм</span>
+              <div class="product-cart__counter">
+                <span class="counter__price">1150 СОМ</span>
+                <span class="counter__minus">-</span>
+                <span class="counter__count">10</span>
+                <span class="counter__plus">+</span>
+              </div>
+              <h4 class="product-cart__details">Состав</h4>
+              <div class="product-cart__ingredients">
+                <span>Лосось</span>, <span>сыр "Филадельфия"</span>,
+                <span>огурец</span>,
+                <span>авокадо</span>
+              </div>
+              <button>Хочу</button>
+            </div>
+          </section>
+
+          <section class="recommend">
+            <h3 class="recommend__title">Рекомендуем к этому товару</h3>
+            <div class="recommend__slider-wrapper">
+              <div class="recommend__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="recommend-item">
+                      <img
+                        class="recommend-item__image"
+                        src="./img/recommend-1.png"
+                        alt="Филадельфия"
+                      />
+                      <h3 class="recommend-item__title">Филадельфия</h3>
+                      <div class="recommend-item__bottom">
+                        <span class="recommend-item__price">140 СОМ</span>
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="recommend-item">
+                      <img
+                        class="recommend-item__image"
+                        src="./img/recommend-1.png"
+                        alt="Филадельфия"
+                      />
+                      <h3 class="recommend-item__title">Филадельфия</h3>
+                      <div class="recommend-item__bottom">
+                        <span class="recommend-item__price">140 СОМ</span>
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="recommend-item">
+                      <img
+                        class="recommend-item__image"
+                        src="./img/recommend-1.png"
+                        alt="Филадельфия"
+                      />
+                      <h3 class="recommend-item__title">Филадельфия</h3>
+                      <div class="recommend-item__bottom">
+                        <span class="recommend-item__price">140 СОМ</span>
+                        <span>+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="recommend__button-next">
+                <svg
+                  width="15"
+                  height="29"
+                  viewBox="0 0 15 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 1L1 14.5L14 28"
+                    stroke="#F2F2F2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <button class="recommend__button-prev">
+                <svg
+                  width="15"
+                  height="29"
+                  viewBox="0 0 15 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L14 14.5L1 28"
+                    stroke="#F2F2F2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
         </main>
 
         <footer class="footer">
@@ -253,7 +371,7 @@
           <img height="116" src="./img/map.jpg" alt="map" />
           <div>
             <div class="sidebar-map__geo">
-              <img src="./img/geolocation.svg" alt="geolocation">
+              <img src="./img/geolocation.svg" alt="geolocation" />
             </div>
             <h4>Укажите адрес</h4>
             <span>И узнайте время доставки</span>
@@ -265,7 +383,5 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script src="./js/slider.js"></script>
-    <script src="./js/filter.js"></script>
-    <script src="./js/accordion.js"></script>
   </body>
 </html>
